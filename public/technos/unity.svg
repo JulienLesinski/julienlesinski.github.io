@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14.222" height="16" fill="none" data-sentry-component="HeaderLogo" data-sentry-element="svg" data-sentry-source-file="HeaderLogo.tsx" version="1.1" viewBox="0 0 14.222 16" xmlns="http://www.w3.org/2000/svg">
+ <g clip-path="url(#clip0_5843_594)" data-sentry-element="g" data-sentry-source-file="HeaderLogo.tsx">
+  <path d="m7.7328 2.8626 2.5432 1.4619c0.0915 0.05133 0.0948 0.19371 0 0.24504l-3.0219 1.7384c-0.09143 0.05298-0.19947 0.04967-0.28425 0l-3.022-1.7384c-0.09309-0.04967-0.09475-0.19537 0-0.24504l2.5416-1.4619v-2.8626l-6.4894 3.7318v7.4636l2.4884-1.4305v-2.9238c-0.00166-0.1043 0.12134-0.17881 0.21277-0.12252l3.022 1.7384c0.09143 0.05298 0.14296 0.14736 0.14296 0.24504v3.4752c0.00166 0.1043-0.12135 0.1788-0.21277 0.1225l-2.5432-1.462-2.4884 1.4305 6.4894 3.7318 6.4894-3.7318-2.4883-1.4305-2.5433 1.462c-0.08976 0.0546-0.2161-0.0166-0.21277-0.1225v-3.4752c0-0.10431 0.05818-0.19702 0.14295-0.24504l3.022-1.7384c0.0897-0.05463 0.2161 0.0149 0.2127 0.12252v2.9238l2.4884 1.4305v-7.4636l-6.4894-3.7318z" fill="#fff" data-sentry-element="path" data-sentry-source-file="HeaderLogo.tsx"/>
+ </g>
+ <defs data-sentry-element="defs" data-sentry-source-file="HeaderLogo.tsx">
+  <clipPath id="clip0_5843_594" data-sentry-element="clipPath" data-sentry-source-file="HeaderLogo.tsx">
+   <rect width="14.222" height="16" fill="#fff" data-sentry-element="rect" data-sentry-source-file="HeaderLogo.tsx"/>
+  </clipPath>
+ </defs>
+</svg>

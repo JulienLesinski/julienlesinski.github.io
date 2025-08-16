@@ -1,0 +1,18 @@
+@reference "../../app.css";
+
+@layer components {
+  .techno-overlay {
+    @apply fixed top-0 right-0 bottom-0 left-0 z-50 hidden max-w-screen flex-col items-center justify-between bg-black/60 p-8 text-white backdrop-blur-md;
+    @apply opacity-0; /* Controlled by animeJS */
+  }
+
+  .techno-overlay.techno-overlay--visible {
+    @apply flex;
+  }
+
+  .techno-overlay__elements {
+    @apply grid w-full max-w-3xl shrink grow flex-wrap content-start justify-start gap-4 overflow-y-scroll p-4;
+    grid-template-columns: repeat(auto-fit, calc(20 * var(--spacing)));
+    grid-template-columns: repeat(auto-fit, calc(20 * var(--spacing)));
+  }
+}
