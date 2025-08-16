@@ -1,0 +1,12 @@
+@reference "../../app.css";
+
+@layer components {
+  .techno-element {
+    @apply aspect-square rounded-full p-4 transition-transform hover:scale-110;
+    @apply opacity-0; /* Handled by animeJS */
+  }
+
+  .techno-element img {
+    @apply size-12;
+  }
+}
