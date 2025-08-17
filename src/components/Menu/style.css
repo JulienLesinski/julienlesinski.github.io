@@ -11,7 +11,7 @@
   }
 
   .menu__links {
-    @apply flex flex-col justify-around gap-4;
+    @apply flex grow flex-col justify-center gap-4;
   }
 
   .menu__link {
