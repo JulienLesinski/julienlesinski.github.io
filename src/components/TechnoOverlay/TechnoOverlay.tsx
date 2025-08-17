@@ -69,12 +69,6 @@ export function TechnoOverlay(props: TechnoOverlayProps) {
         opacity: [{ to: 1, duration: 500 }],
       });
 
-      // animate(".menu__link", {
-      //   translateX: [{ from: -100, to: 0 }],
-      //   opacity: [{ from: 0, to: 1 }],
-      //   duration: stagger(200, { start: 200 }),
-      //   ease: "out",
-      // });
       {
         closeButton.style.transitionProperty = "none";
         animate(closeButton, {
