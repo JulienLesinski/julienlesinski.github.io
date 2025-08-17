@@ -41,7 +41,7 @@ export default function Home() {
         ]}
       />
       <section id="introduction">
-        <SectionContainer class="text-pink-vibrant font-display flex flex-col gap-4 px-4 py-8">
+        <SectionContainer class="text-pink-vibrant font-display flex flex-col gap-4 px-4 py-8 md:pt-16">
           <h1 class="text-left text-5xl font-semibold">
             Cours de programmation
           </h1>

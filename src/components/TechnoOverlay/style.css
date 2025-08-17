@@ -11,7 +11,7 @@
   }
 
   .techno-overlay__elements {
-    @apply grid w-full max-w-3xl shrink grow flex-wrap content-start justify-start gap-4 overflow-y-scroll p-4;
+    @apply grid w-full max-w-3xl shrink grow flex-wrap content-start justify-center gap-4 overflow-y-scroll p-4;
     grid-template-columns: repeat(auto-fit, calc(20 * var(--spacing)));
     grid-template-columns: repeat(auto-fit, calc(20 * var(--spacing)));
   }

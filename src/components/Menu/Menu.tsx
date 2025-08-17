@@ -4,6 +4,7 @@ import {
   onMount,
   type JSXElement,
   createEffect,
+  onCleanup,
 } from "solid-js";
 import "./style.css";
 import { animate, stagger } from "animejs";
@@ -22,6 +23,7 @@ export default function Menu(props: Props): JSXElement {
   let menuOverlay!: HTMLElement;
   const [menuOverlayVisible, setMenuOverlayVisible] = createSignal(false);
   let closeButton!: HTMLButtonElement;
+  const [atBottom, setAtBottom] = createSignal(false);
 
   createEffect(() => {
     if (opened()) {
@@ -65,13 +67,32 @@ export default function Menu(props: Props): JSXElement {
     }
   });
 
+  onMount(() => {
+    const onScroll = () => {
+      setAtBottom(
+        Math.ceil(window.innerHeight + window.scrollY) >=
+          document.documentElement.scrollHeight,
+      );
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    onCleanup(() => {
+      window.removeEventListener("scroll", onScroll);
+    });
+  });
+
   return (
-    <nav class="menu sticky top-0 z-50" onScroll={(ev) => ev.stopPropagation()}>
+    <nav
+      class="menu fixed right-0 bottom-0 left-0 z-50 flex justify-end"
+      onScroll={(ev) => ev.stopPropagation()}
+    >
       <button
         type="button"
-        class="bg-pink-vibrant origin-top-left scale-100 rounded-br-full p-4 text-white transition-transform hover:scale-110"
+        class="bg-pink-vibrant origin-bottom-right scale-100 rounded-tl-full p-4 text-white transition-[transform_opacity] hover:scale-110 hover:opacity-100"
         classList={{
-          "-translate-x-full -translate-y-full": opened(),
+          "translate-x-full translate-y-full": opened(),
+          "opacity-40": atBottom(),
         }}
         onClick={() => setOpened((old) => true)}
       >
@@ -81,7 +102,7 @@ export default function Menu(props: Props): JSXElement {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-8 -translate-2 transform transition-[stroke]"
+          class="size-8 translate-x-2 translate-y-2 transform transition-[stroke]"
         >
           <path
             stroke-linecap="round"
