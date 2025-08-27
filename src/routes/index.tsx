@@ -62,7 +62,7 @@ export default function Home() {
             <p>Mon expérience, c'est&nbsp;:</p>
             <ul>
               <li>Un Master Informatique</li>
-              <li>2 dans l'univers du logiciel ludique à but thérapeutique</li>
+              <li>2 ans dans l'univers du logiciel ludique à but thérapeutique</li>
               <li>3 ans à concevoir des sites webs</li>
               <li>
                 Des dispenses de cours de React en interne et à l'école IRIS
@@ -83,18 +83,18 @@ export default function Home() {
             <div class="flex flex-col gap-6 pt-4">
               <h2 class="text-pink-vibrant">Pour qui&nbsp;?</h2>
               <div class="font-big-body text-pink-black z-10 flex flex-col gap-2">
-                <p>Pour tous ceux qui veulent...</p>
+                <p>Pour tous ceux qui...</p>
                 <ul>
                   <li>
-                    Apprendre la programmation (hobby, personnel,
+                    Veulent apprendre la programmation (hobby, personnel,
                     professionnel...)
                   </li>
                   <li>
-                    Renforcer leurs compétences ou découvrir de nouveaux
+                    Souhaitent renforcer leurs compétences ou découvrir de nouveaux
                     domaines
                   </li>
                   <li>Ont un projet de développement logiciel</li>
-                  <li>Et pour tous les curieux&nbsp;!</li>
+                  <li>Sont simplement curieux&nbsp;!</li>
                 </ul>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function Home() {
             <h2 class="text-green">Organisation</h2>
             <div class="text-green-black font-big-body flex flex-col gap-2">
               <p>
-                Les cours sont découpés en <em>séance de 1h</em> et se passe
+                Les cours sont découpés en <em>séance de 1h</em> et se passent
                 uniquement <em>en présentiel</em> à domicile.
               </p>
               <p>
