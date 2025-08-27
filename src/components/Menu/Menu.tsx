@@ -84,12 +84,12 @@ export default function Menu(props: Props): JSXElement {
 
   return (
     <nav
-      class="menu fixed right-0 bottom-0 left-0 z-50 flex justify-end"
+      class="menu fixed right-0 bottom-0 left-0 z-50 flex justify-end pointer-events-none"
       onScroll={(ev) => ev.stopPropagation()}
     >
       <button
         type="button"
-        class="bg-pink-vibrant origin-bottom-right scale-100 rounded-tl-full p-4 text-white transition-[transform_opacity] hover:scale-110 hover:opacity-100"
+        class="bg-pink-vibrant origin-bottom-right scale-100 rounded-tl-full p-4 text-white transition-[transform_opacity] hover:scale-110 hover:opacity-100 pointer-events-auto"
         classList={{
           "translate-x-full translate-y-full": opened(),
           "opacity-40": atBottom(),
@@ -113,7 +113,7 @@ export default function Menu(props: Props): JSXElement {
       </button>
       <section
         onScroll={(ev) => ev.stopPropagation()}
-        class="menu__overlay"
+        class="menu__overlay pointer-events-auto"
         classList={{
           "menu__overlay--visible": menuOverlayVisible(),
         }}
