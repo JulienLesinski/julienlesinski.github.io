@@ -70,10 +70,6 @@ jobs:
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} build
         working-directory: ${{ env.BUILD_PATH }}
-      - name: Disable jekyll
-        id: disable-jekyll
-        run: |
-          touch ${{ env.BUILD_PATH }}/.output/public/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
