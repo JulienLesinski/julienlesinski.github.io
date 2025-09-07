@@ -62,7 +62,9 @@ export default function Home() {
             <p>Mon expérience, c'est&nbsp;:</p>
             <ul>
               <li>Un Master Informatique</li>
-              <li>2 ans dans l'univers du logiciel ludique à but thérapeutique</li>
+              <li>
+                2 ans dans l'univers du logiciel ludique à but thérapeutique
+              </li>
               <li>3 ans à concevoir des sites webs</li>
               <li>
                 Des dispenses de cours de React en interne et à l'école IRIS
@@ -90,8 +92,8 @@ export default function Home() {
                     professionnel...)
                   </li>
                   <li>
-                    Souhaitent renforcer leurs compétences ou découvrir de nouveaux
-                    domaines
+                    Souhaitent renforcer leurs compétences ou découvrir de
+                    nouveaux domaines
                   </li>
                   <li>Ont un projet de développement logiciel</li>
                   <li>Sont simplement curieux&nbsp;!</li>
@@ -302,7 +304,7 @@ export default function Home() {
         >
           <span>Me contacter par mail</span>
         </a>
-        <div class="from-green-bit-soft to-green-soft flex flex-col items-center gap-4 bg-gradient-to-b px-4 pt-24 pb-4 md:flex-row-reverse md:justify-end">
+        <div class="from-green-bit-soft to-green-soft flex flex-col items-center gap-8 bg-gradient-to-b px-4 pt-24 pb-4">
           <div class="flex grow flex-col items-center gap-24 md:items-end">
             <a
               href="mailto:lesinski.julien@hotmail.com"
@@ -310,7 +312,7 @@ export default function Home() {
             >
               <span>Me contacter par mail</span>
             </a>
-            <div class="font-big-body text-green flex flex-col items-center gap-1 px-4 md:flex-row-reverse md:justify-around md:gap-6 md:text-sm">
+            <div class="font-big-body text-green flex flex-col items-center gap-1 px-4 md:text-sm">
               <a href="tel:+33609540690" class="whitespace-nowrap">
                 (+33)6 09 54 06 90
               </a>
@@ -319,13 +321,23 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <p class="text-green font-display text-xs">
-            Un grand merci à{" "}
-            <a href="https://twitter.com/pablostanley" class="text-green-black">
-              Pablo Stanley
-            </a>{" "}
-            pour ses magnifiques illustrations.
-          </p>
+          <div class="flex w-full items-center justify-between gap-6 pr-16 md:items-end">
+            <img
+              src="https://i.postimg.cc/PrKqM63D/nova.png"
+              alt="Dispositif nova (service à la personne)"
+              class="h-12"
+            />
+            <p class="text-green font-display text-xs">
+              Un grand merci à{" "}
+              <a
+                href="https://twitter.com/pablostanley"
+                class="text-green-black"
+              >
+                Pablo Stanley
+              </a>{" "}
+              pour ses magnifiques illustrations.
+            </p>
+          </div>
         </div>
       </section>
     </main>
