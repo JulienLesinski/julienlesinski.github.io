@@ -116,7 +116,8 @@ export default function Home() {
             <div class="text-green-black font-big-body flex flex-col gap-2">
               <p>
                 Les cours sont découpés en <em>séance de 1h</em> et se passent
-                uniquement <em>en présentiel</em> à domicile.
+                uniquement <em>en présentiel</em> à domicile (dans la zone de
+                Montpellier).
               </p>
               <p>
                 Une{" "}
